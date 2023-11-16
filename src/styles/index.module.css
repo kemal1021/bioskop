@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.text-arc {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  position: relative;
+}
+
+.text-arc:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.text-arc span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  white-space: nowrap;
+  transform-origin: center center;
+}
+.fixedNavbar {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+  .slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Menentukan tiga kolom foto dalam satu slide */
+    gap: 10px; /* Menentukan jarak antara foto-foto */
+  }
+.linear{
+  background: linear-gradient(to right, rgba(23, 22, 22, 0.977), #171717 , #17171784, #1e1e1f00, rgba(21, 22, 22, 0));   
+  width: 100%;
+  height: 100%;
+}
